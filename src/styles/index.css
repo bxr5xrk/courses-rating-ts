@@ -38,9 +38,9 @@ body {
 	scroll-behavior: smooth;  
 	text-rendering: optimizeSpeed;  
 	line-height: 1.5;  
-  font-family: 'Noto Sans', sans-serif;
-  color: var(--black);
-  background: #E5E5E5;
+	font-family: 'Noto Sans', sans-serif;
+	color: var(--black);
+	background: #E5E5E5;
 }
 
 :root {
@@ -49,5 +49,6 @@ body {
   --white: white;
   --red: #DE0000;
   --green: #1DC37E;
-  --green-ligth: #C8F8E4;
+  --green-light: #C8F8E4;
+  --gray-light: #bebebe;
 }
