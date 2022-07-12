@@ -4,12 +4,13 @@ import Button from "./components/Button/Button";
 import Paragraph from "./components/Paragraph/Paragraph";
 import Tag from "./components/Tag/Tag";
 import Rating from "./components/Rating/Rating";
+import Layout from "./layout/Layout";
 
 const App = () => {
     const [rating, setRating] = useState(3);
 
     return (
-        <>
+        <Layout>
             <Htag tag="h1">hello world</Htag>
             <Button appearance="primary" onClick={() => console.log(11)}>
                 button
@@ -37,7 +38,7 @@ const App = () => {
             </Tag>
             <Rating isEditable rating={rating} setRating={setRating} />
             <Rating rating={3} />
-        </>
+        </Layout>
     );
 };
 
