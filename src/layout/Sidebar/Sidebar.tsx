@@ -4,9 +4,9 @@ import { SidebarProps } from "./Sidebar.props";
 const Sidebar = ({...props}: SidebarProps) => {
 
     return (
-        <div>
+        <nav>
             SIDEBAR
-        </div>
+        </nav>
     )
 }
 
