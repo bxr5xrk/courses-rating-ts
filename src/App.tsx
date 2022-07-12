@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Htag from "./components/Htag/Htag";
 import Button from "./components/Button/Button";
 import Paragraph from "./components/Paragraph/Paragraph";
 import Tag from "./components/Tag/Tag";
+import Rating from "./components/Rating/Rating";
 
 const App = () => {
+    const [rating, setRating] = useState(3);
+
     return (
         <>
             <Htag tag="h1">hello world</Htag>
@@ -32,6 +35,8 @@ const App = () => {
             <Tag size="m" color="red">
                 test
             </Tag>
+            <Rating isEditable rating={rating} setRating={setRating} />
+            <Rating rating={3} />
         </>
     );
 };
