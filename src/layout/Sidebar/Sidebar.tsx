@@ -4,7 +4,7 @@ import { SidebarProps } from "./Sidebar.props";
 const Sidebar = ({...props}: SidebarProps) => {
 
     return (
-        <nav>
+        <nav {...props}>
             SIDEBAR
         </nav>
     )

@@ -1,13 +1,13 @@
 import React from "react";
 import { FooterProps } from "./Footer.props";
 
-const Footer = ({...props}: FooterProps) => {
-
+const Footer = ({ ...props }: FooterProps) => {
     return (
-        <footer>
-            FOOTER
+        <footer {...props}>
+            <p>Top Courses</p>
+            <p>sdcsdcsdcd</p>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
