@@ -5,13 +5,14 @@ import Paragraph from "./components/Paragraph/Paragraph";
 import Tag from "./components/Tag/Tag";
 import Rating from "./components/Rating/Rating";
 import Layout from "./layout/Layout";
+import axios from "axios";
 
 const App = () => {
     const [rating, setRating] = useState(3);
 
     return (
         <Layout>
-            <Htag tag="h1">hello world</Htag>
+            <Htag tag="h1">text</Htag>
             <Button appearance="primary" onClick={() => console.log(11)}>
                 button
             </Button>
@@ -43,3 +44,16 @@ const App = () => {
 };
 
 export default App;
+
+export const getData = async () => {
+    // const firstCategory = 0
+    try{
+        const {data} = await axios.post('http://courses-top.ru/api/top-page/find')
+        console.log(data)
+
+    } catch (a) {
+        console.error(a)
+    }
+
+
+}
