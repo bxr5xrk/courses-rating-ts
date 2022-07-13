@@ -3,6 +3,7 @@
     grid-template-columns: auto 230px minmax(320px, 1200px) auto;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    gap: 0 30px;
     grid-template-areas:
     ". header header ."
     ". sidebar main ."
@@ -13,32 +14,21 @@
 .header {
     grid-area: header;
     display: none;
-    border: 1px solid rgb(168, 32, 32);
 }
 
 /* ==================== SIDEBAR ==================== */
 .sidebar {
     grid-area: sidebar;
-    border: 1px solid rgb(168, 114, 32);
 }
 
 /* ==================== MAIN ==================== */
 .main {
     grid-area: main;
-    border: 1px solid rgb(32, 46, 168);
 }
 
 /* ==================== FOOTER ==================== */
 .footer {
-    display: flex;
     grid-area: footer;
-    border: 1px solid rgb(93, 168, 32);
-    height: 72px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--white);
-    background-color: var(--primary);
 }
 
 /* ==================== ADAPTIVE ==================== */
